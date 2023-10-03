@@ -1,0 +1,72 @@
+.playstation-container {
+  height: 77vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.playstation-text {
+  border-left: 1rem solid red;
+  padding-left: 10px;
+  margin-left: 10%;
+}
+.playstation-title {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  max-width: 350px;
+}
+.playstation-subtitle {
+  margin-bottom: 20px;
+}
+
+.buy {
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.buy:hover {
+  background: linear-gradient(#eb3349, #f45c43);
+}
+
+.playstation-controller {
+  width: 60%;
+  border-radius: 50px;
+  transition: all ease 400ms;
+}
+.playstation-img {
+  position: relative;
+  overflow: hidden;
+}
+span {
+  transition: all ease 400ms;
+}
+span {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 110%;
+  background: linear-gradient(#eb3349, #f45c43);
+  z-index: -1;
+  border-radius: 1rem;
+}
+.playstation-controller:hover {
+  transform: translateX(20%);
+}
+
+@media screen and (max-width: 600px) {
+  .playstation-container {
+    grid-template-columns: 1fr;
+  }
+  .playstation-title {
+    font-size: 3rem;
+  }
+  .Playstation-section {
+    margin-top: 100px;
+  }
+  .playstation-text {
+    margin-left: 0;
+  }
+}

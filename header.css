@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
+.logo {
+  width: 8rem;
+  cursor: pointer;
+}
+
+nav ol {
+  display: flex;
+  column-gap: 3rem;
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+li::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  transition: all ease 400ms;
+  background: linear-gradient(#eb3349, #f45c43);
+}
+li:hover::after {
+  width: 100%;
+}
+.menu {
+  width: 2rem;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    width: 5rem;
+  }
+}
